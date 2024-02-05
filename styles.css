@@ -1,0 +1,92 @@
+/* Sunset Shades Theme CSS */
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #e91e63, #ff9800); /* Sunset Shades gradient background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.quote-box {
+    background-color: #fafafa; /* Light Gray background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+h2 {
+    color: #e91e63; /* Pink heading */
+    margin-bottom: 20px;
+}
+
+blockquote {
+    font-size: 24px;
+    color: #ff9800; /* Amber quote color */
+    margin-bottom: 20px;
+}
+
+#author {
+    font-style: italic;
+    color: #673ab7; /* Purple author color */
+}
+
+.buttonsDiv {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+button {
+    border: none;
+    margin: auto 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#newQuoteGenButton {
+    background: #e91e63; /* Pink button */
+    color: white;
+}
+
+#newQuoteGenButton:hover {
+    background: #ff4081; /* Darker pink on hover */
+}
+
+#copyButton {
+    background: #333;
+    color: white;
+}
+
+#copyButton:hover {
+    background: #555;
+}
+
+.fa {
+    margin-right: 5px;
+    color: #fff; /* White icon color */
+}
+
+#credentials {
+    font-size: 14px;
+    color: #888; /* Light Gray credentials color */
+    text-align: center;
+}
+
+#credentials a {
+    color: #673ab7; /* Purple anchor tag color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#credentials a:hover {
+    color: #512da8; /* Darker purple on hover */
+}
