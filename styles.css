@@ -1,92 +1,143 @@
-/* Sunset Shades Theme CSS */
-
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #e91e63, #ff9800); /* Sunset Shades gradient background */
+    background: linear-gradient(to right, #e91e63, #ff9800);
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .quote-box {
-    background-color: #fafafa; /* Light Gray background */
+    background-color: #fafafa;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 30px;
+    padding: 2rem;
     text-align: center;
+    width: 90%;
     max-width: 400px;
-    width: 100%;
 }
 
 h2 {
-    color: #e91e63; /* Pink heading */
-    margin-bottom: 20px;
+    color: #e91e63;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
 }
 
 blockquote {
-    font-size: 24px;
-    color: #ff9800; /* Amber quote color */
-    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #ff9800;
+    margin-bottom: 1.5rem;
 }
 
 #author {
     font-style: italic;
-    color: #673ab7; /* Purple author color */
+    color: #673ab7;
+    position: relative;
+    font-size: 0.9rem;
+}
+
+#author::before {
+    display: block;
+    content: "";
+    position: absolute;
+    left: -0.5rem;
+    top: 50%;
+    width: 0.5rem;
+    height: 1px;
+    background-color: #673ab7;
+    transform: translateY(-50%);
 }
 
 .buttonsDiv {
     display: flex;
-    justify-content: center;
-    margin: 20px auto;
+    justify-content: space-evenly;
+    margin: 1.5rem auto;
 }
 
 button {
     border: none;
-    margin: auto 10px;
-    padding: 10px 20px;
+    margin: 0;
+    padding: 0.75rem 1.5rem;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease;
+    font-size: 1rem;
+    width: 40%;
 }
 
 #newQuoteGenButton {
-    background: #e91e63; /* Pink button */
+    background: #e91e63;
     color: white;
 }
 
 #newQuoteGenButton:hover {
-    background: #ff4081; /* Darker pink on hover */
+    background: #ff4081;
 }
 
 #copyButton {
-    background: #333;
+    background: #ff9800;
     color: white;
 }
 
 #copyButton:hover {
-    background: #555;
+    background: #ffac33;
 }
 
 .fa {
-    margin-right: 5px;
-    color: #fff; /* White icon color */
+    margin-right: 0.5rem;
+    color: #fff;
 }
 
 #credentials {
-    font-size: 14px;
-    color: #888; /* Light Gray credentials color */
+    font-size: 0.8rem;
+    color: #888;
     text-align: center;
 }
 
 #credentials a {
-    color: #673ab7; /* Purple anchor tag color */
+    color: #673ab7;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 #credentials a:hover {
-    color: #512da8; /* Darker purple on hover */
+    color: #512da8;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    .quote-box {
+        padding: 1rem;
+    }
+    
+    h2 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+    
+    blockquote {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    #author {
+        font-size: 0.8rem;
+    }
+    
+    #author::before {
+        left: -0.3rem;
+        width: 0.3rem;
+    }
+    
+    .buttonsDiv {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    button {
+        margin-bottom: 0.5rem;
+        width: 100%;
+    }
 }
