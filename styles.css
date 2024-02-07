@@ -30,6 +30,9 @@ blockquote {
     color: #ff9800;
     margin-bottom: 1.5rem;
 }
+blockquote::before, blockquote::after{
+    content: '"';
+}
 
 #author {
     font-style: italic;
